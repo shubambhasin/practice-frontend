@@ -26,9 +26,17 @@ export const Sidebar = () => {
     setSizeFilter
   } = useFilter();
 
+  const clearAll = () => {
+    setSortType("");
+    setFilterType("");
+    setBrandFilter("");
+    setSizeFilter("");
+  };
   return (
     <div className="sidebar">
-      <span className="h3 f-grey m1-rem t-center">Filters</span>
+      <span className="h3 f-grey m1-rem t-center">
+        Filters <button onClick={clearAll}>Clear filters</button>
+      </span>
       <hr />
       <div className="p1-rem">
         <div className="flex flex-col mt1-rem">
@@ -36,6 +44,7 @@ export const Sidebar = () => {
           <div>
             <input
               type="radio"
+              checked={sortType === LOW_TO_HIGH ? true : false}
               name="sortBy"
               onClick={() => setSortType(LOW_TO_HIGH)}
             />
@@ -45,6 +54,7 @@ export const Sidebar = () => {
             <input
               type="radio"
               name="sortBy"
+              checked={sortType === HIGH_TO_LOW ? true : false}
               onClick={() => setSortType(HIGH_TO_LOW)}
             />
             <label>high-to-low</label>
@@ -56,6 +66,7 @@ export const Sidebar = () => {
             <input
               type="radio"
               name="filterBy"
+              checked={filterType === CHILDREN ? true : false}
               onClick={() => setFilterType(CHILDREN)}
             />
             <label>Children</label>
@@ -64,6 +75,7 @@ export const Sidebar = () => {
             <input
               type="radio"
               name="filterBy"
+              checked={filterType === MEN ? true : false}
               onClick={() => setFilterType(MEN)}
             />
             <label>Men</label>
@@ -72,6 +84,7 @@ export const Sidebar = () => {
             <input
               type="radio"
               name="filterBy"
+              checked={filterType === WOMEN ? true : false}
               onClick={() => setFilterType(WOMEN)}
             />
             <label>Women</label>
@@ -83,6 +96,7 @@ export const Sidebar = () => {
           <div>
             <input
               type="radio"
+              checked={sizeFilter === S ? true : false}
               name="filterBySize"
               onClick={() => setSizeFilter(S)}
             />
@@ -91,6 +105,7 @@ export const Sidebar = () => {
           <div>
             <input
               type="radio"
+              checked={sizeFilter === M ? true : false}
               name="filterBySize"
               onClick={() => setSizeFilter(M)}
             />
@@ -100,6 +115,7 @@ export const Sidebar = () => {
             <input
               type="radio"
               name="filterBySize"
+              checked={sizeFilter === L ? true : false}
               onClick={() => setSizeFilter(L)}
             />
             <label>L</label>
@@ -111,6 +127,7 @@ export const Sidebar = () => {
             <input
               type="radio"
               name="filterByBrand"
+              checked={brandFilter === NIKE ? true : false}
               onClick={() => setBrandFilter(NIKE)}
             />
             <label>Nike</label>
@@ -119,6 +136,7 @@ export const Sidebar = () => {
             <input
               type="radio"
               name="filterByBrand"
+              checked={brandFilter === TIMEX ? true : false}
               onClick={() => setBrandFilter(TIMEX)}
             />
             <label>Timex</label>
@@ -127,6 +145,7 @@ export const Sidebar = () => {
             <input
               type="radio"
               name="filterByBrand"
+              checked={brandFilter === CASIO ? true : false}
               onClick={() => setBrandFilter(CASIO)}
             />
             <label>Casio</label>

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "brand": "Nike",
-    "size": "s",
+    "size": "S",
     "idealFor": "women",
     "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
     "price": 109.95,
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "brand": "Timex",
-    "size": "m",
+    "size": "M",
     "idealFor": "men",
     "title": "Mens Casual Premium Slim Fit T-Shirts ",
     "price": 22.3,
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "brand": "Casio",
-    "size": "l",
+    "size": "L",
     "idealFor": "women",
     "title": "Mens Cotton Jacket",
     "price": 55.99,
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "brand": "Casio",
-    "size": "s",
+    "size": "S",
     "idealFor": "women",
     "title": "Mens Casual Slim Fit",
     "price": 15.99,
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "brand": "Timex",
-    "size": "l",
+    "size": "L",
     "idealFor": "children",
     "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
     "price": 695,
@@ -57,7 +57,7 @@
   {
     "id": 6,
     "brand": "Nike",
-    "size": "s",
+    "size": "S",
     "idealFor": "women",
     "title": "Solid Gold Petite Micropave ",
     "price": 168,
@@ -68,7 +68,7 @@
   {
     "id": 7,
     "brand": "Timex",
-    "size": "m",
+    "size": "M",
     "idealFor": "women",
     "title": "White Gold Plated Princess",
     "price": 9.99,
@@ -79,7 +79,7 @@
   {
     "id": 8,
     "brand": "Nike",
-    "size": "l",
+    "size": "L",
     "idealFor": "women",
     "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
     "price": 10.99,
@@ -90,7 +90,7 @@
   {
     "id": 9,
     "brand": "Casio",
-    "size": "l",
+    "size": "L",
     "idealFor": "children",
     "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
     "price": 64,
@@ -101,7 +101,7 @@
   {
     "id": 10,
     "brand": "Timex",
-    "size": "m",
+    "size": "M",
     "idealFor": "children",
     "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
     "price": 109,
@@ -112,7 +112,7 @@
   {
     "id": 11,
     "brand": "Casio",
-    "size": "l",
+    "size": "L",
     "idealFor": "women",
     "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
     "price": 109,
@@ -123,10 +123,32 @@
   {
     "id": 12,
     "brand": "Nike",
-    "size": "m",
+    "size": "M",
     "idealFor": "men",
     "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
     "price": 114,
+    "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg"
+  },
+  {
+    "id": 13,
+    "brand": "Timex",
+    "size": "L",
+    "idealFor": "women",
+    "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+    "price": 102.45,
+    "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg"
+  },
+  {
+    "id": 14,
+    "brand": "Timex",
+    "size": "L",
+    "idealFor": "women",
+    "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+    "price": 502.45,
     "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
     "category": "electronics",
     "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg"
