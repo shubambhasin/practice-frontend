@@ -1,6 +1,16 @@
 .product-page {
-  margin: 0.5rem 0;
+  margin: 60px 0rem;
   background-color: white;
   width: 100%;
+  margin-left: 220px;
+  min-height: 100vh;
   /* border-radius: 10px; */
+}
+
+.product-page-full {
+  margin: 60px 0rem;
+  background-color: white;
+  width: 100%;
+  margin: 60px auto 0 auto;
+  min-height: 100vh;
 }

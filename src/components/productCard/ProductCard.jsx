@@ -3,7 +3,7 @@ import "./ProductCard.css";
 
 export const ProductCard = ({ product }) => {
   return (
-    <div className="product-card">
+    <div className="product-card flex flex-col jcsb">
       <img src={product.image} alt="product-img" className="responsive-50pc" />
       <div className="flex flex-col">
         <h1 className="h3">{product.brand} </h1>

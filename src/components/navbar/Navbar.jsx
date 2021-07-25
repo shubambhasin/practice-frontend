@@ -3,7 +3,7 @@ import "./navbar.css";
 export const Navbar = () => {
   return (
     <div className="navbar flex aic jcsa">
-      <div className="brand">Flipkart</div>
+      <div className="brand pointer">Flipkart</div>
       <div className="navbar-search">
         <input
           type="text"
@@ -12,8 +12,6 @@ export const Navbar = () => {
         />
       </div>
       <div className="user-interactions">
-        <button className="btn ">Login</button>
-        <button className="btn ">More</button>
         <button className="btn ">Cart</button>
       </div>
     </div>

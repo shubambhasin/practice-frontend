@@ -13,6 +13,7 @@ import {
   WOMEN
 } from "../../context/actions";
 import { useFilter } from "../../context/FilterContext";
+import { useSidebar } from "../../context/SidebarContext";
 import "./sidebar.css";
 export const Sidebar = () => {
   const {
@@ -25,6 +26,7 @@ export const Sidebar = () => {
     sizeFilter,
     setSizeFilter
   } = useFilter();
+  const { showSidebar, setShowSidebar } = useSidebar();
 
   const clearAll = () => {
     setSortType("");
@@ -33,15 +35,24 @@ export const Sidebar = () => {
     setSizeFilter("");
   };
   return (
-    <div className="sidebar">
+    <div className={showSidebar ? `sidebar` : "sidebar-hidden relative"}>
       <span className="h3 f-grey m1-rem t-center">
-        Filters <button onClick={clearAll}>Clear filters</button>
+        Filters{" "}
+        <button onClick={clearAll} className="btn btn-sm btn-outline">
+          Clear filters
+        </button>
+        <button
+          className="absolute close"
+          onClick={() => setShowSidebar(false)}
+        >
+          x
+        </button>
       </span>
       <hr />
       <div className="p1-rem">
         <div className="flex flex-col mt1-rem">
           <span> SortBy</span>
-          <div>
+          <div className="flex gap-1 aic">
             <input
               type="radio"
               checked={sortType === LOW_TO_HIGH ? true : false}
@@ -50,7 +61,7 @@ export const Sidebar = () => {
             />
             <label>low-to-high</label>
           </div>
-          <div>
+          <div className="flex gap-1 aic">
             <input
               type="radio"
               name="sortBy"
@@ -61,8 +72,8 @@ export const Sidebar = () => {
           </div>
         </div>
         <div className="flex flex-col jcc mt1-rem">
-          <span> FilterBy</span>
-          <div>
+          <span> FilterBy Choice</span>
+          <div className="flex gap-1 aic">
             <input
               type="radio"
               name="filterBy"
@@ -71,7 +82,7 @@ export const Sidebar = () => {
             />
             <label>Children</label>
           </div>
-          <div>
+          <div className="flex gap-1 aic">
             <input
               type="radio"
               name="filterBy"
@@ -80,7 +91,7 @@ export const Sidebar = () => {
             />
             <label>Men</label>
           </div>
-          <div>
+          <div className="flex gap-1 aic">
             <input
               type="radio"
               name="filterBy"
@@ -93,7 +104,7 @@ export const Sidebar = () => {
         Brand
         <div className="flex flex-col jcc mt1-rem">
           <span> FilterBy Size</span>
-          <div>
+          <div className="flex gap-1 aic">
             <input
               type="radio"
               checked={sizeFilter === S ? true : false}
@@ -102,7 +113,7 @@ export const Sidebar = () => {
             />
             <label>S</label>
           </div>
-          <div>
+          <div className="flex gap-1 aic">
             <input
               type="radio"
               checked={sizeFilter === M ? true : false}
@@ -111,7 +122,7 @@ export const Sidebar = () => {
             />
             <label>M</label>
           </div>
-          <div>
+          <div className="flex gap-1 aic">
             <input
               type="radio"
               name="filterBySize"
@@ -123,7 +134,7 @@ export const Sidebar = () => {
         </div>
         <div className="flex flex-col jcc mt1-rem">
           <span> FilterBy Brand</span>
-          <div>
+          <div className="flex gap-1 aic">
             <input
               type="radio"
               name="filterByBrand"
@@ -132,7 +143,7 @@ export const Sidebar = () => {
             />
             <label>Nike</label>
           </div>
-          <div>
+          <div className="flex gap-1 aic">
             <input
               type="radio"
               name="filterByBrand"
@@ -141,7 +152,7 @@ export const Sidebar = () => {
             />
             <label>Timex</label>
           </div>
-          <div>
+          <div className="flex gap-1 aic">
             <input
               type="radio"
               name="filterByBrand"
