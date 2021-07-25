@@ -12,6 +12,8 @@ import {
   TIMEX,
   WOMEN
 } from "../../context/actions";
+import { AiOutlineClose } from "react-icons/ai";
+
 import { useFilter } from "../../context/FilterContext";
 import { useSidebar } from "../../context/SidebarContext";
 import "./sidebar.css";
@@ -41,12 +43,12 @@ export const Sidebar = () => {
         <button onClick={clearAll} className="btn btn-sm btn-outline">
           Clear filters
         </button>
-        <button
-          className="absolute close"
+        <span
+          className="pointer absolute close"
           onClick={() => setShowSidebar(false)}
         >
-          x
-        </button>
+          <AiOutlineClose />
+        </span>
       </span>
       <hr />
       <div className="p1-rem">
